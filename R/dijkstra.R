@@ -62,9 +62,3 @@ dijkstra <- function(graph, init_node) {
 }
 
 
-data(wiki_graph)
-dijkstra(wiki_graph, 1)
-dijkstra(wiki_graph, 2)
-dijkstra(wiki_graph, 3)
-
-
