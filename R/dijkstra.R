@@ -52,7 +52,7 @@ dijkstra <- function(graph, init_node) {
 
     # remove used row & update row and node names
     graph <- graph[-which.min(graph$cost),]
-    rownames(graph) = seq(length=nrow(graph))
+    rownames(graph) <- 1:nrow(graph)
     u <- which(graph$v1==node_u)
 
   }
