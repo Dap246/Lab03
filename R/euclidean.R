@@ -1,18 +1,22 @@
 #' @title euclidean
-#'
+#' euclidiean calculates the Greatest Common Divisor (GCD) for 2 numbers
 #'
 #' @param b a number
 #' @param a a number
-#' @description \code{euclidean} use the euclidean algorithm to calculate the Greatest Common Divisor (GCD) of 2 numbers.
+#' @description euclidean use the euclidean algorithm to calculcate the GCD.
+#' @source
+#' see more at: \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
+#'
 #' @return The GCD of \code{b} and \code{a}.
 #' @export
-#' @references https://en.wikipedia.org/wiki/Euclidean_algorithm
 #' @examples
 #' euclidean(123612, 13892347912)
 #' euclidean(100, 1000)
 
 
-euclidean <- function(b, a) {
+
+euclidean <-
+function(b, a) {
 
   stopifnot( class(a) == 'numeric' && length(a) == 1 && class(b) == 'numeric' && length(b) == 1 )
 
@@ -21,12 +25,10 @@ euclidean <- function(b, a) {
     q <- b
     b <- a %% b
     a <- q
+    q <- abs(q)
 
-  }
+    }
 
-  return(abs(q))
+  return(q)
 
 }
-
-euclidean(123612, 13892347912)
-euclidean(100,1000)
