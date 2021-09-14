@@ -3,7 +3,7 @@ Type: Package
 Title: Euclidean and Dijkstras Algorithms
 Version: 2.0
 Date: 2021-09-14
-Authors@R: c(person("Raja Uzair", "Saeed", email = "rjuzair@gmail.com", role = c("aut", "cre")),
+Authors@R: c(person("Raja Uzair", "Saeed", email = "rjuzair@gmail.com", role = c("aut")),
              person("Daniel", "Persson", email = "danpe586@student.liu.se", role = c("aut", "cre")))
 Maintainer: Daniel Persson <danpe586@student.liu.se>
 Description: euclidean calculates the greatest common devisor. Dijkstras calculates the shortest path. 
